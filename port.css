@@ -1,0 +1,276 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #007bff;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    padding: 0.8rem 1rem;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    background-color: #0056b3;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+/* Home Section */
+#home {
+    padding: 100px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+#home img {
+    border-radius: 50%;
+    max-width: 250px;
+    height: auto;
+}
+
+/* About Section */
+#about {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+#about ul {
+    list-style-type: none;
+}
+
+#about ul li {
+    padding: 8px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Skill Section */
+#skills {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+    height:100vh;
+}
+
+.skills-items {
+    display: flex;                
+    justify-content: space-between; 
+    gap: 20px;                     
+}
+
+.skill-item {
+    text-align: center;
+    width: 30%;                   
+    transition: transform 0.3s ease-in-out; 
+}
+
+.skill-item img {
+    width: 100%;                   
+    height: auto;                  
+    max-width: 120px;            
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+}
+
+.skill-item h4 {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.skill-item:hover img {
+    transform: scale(1.1);         
+    opacity: 0.8;                  
+}
+
+.skill-item:hover {
+    transform: translateY(-10px);
+}
+
+
+@media (max-width: 768px) {
+    .skills-items {
+        flex-direction: column;    
+        align-items: center;       
+    }
+
+    .skill-item {
+        width: 80%;               
+        margin-bottom: 20px;       
+    }
+
+    .skill-item img {
+        max-width: 100px;         
+    
+    }
+}
+
+/* Projects Section */
+#projects {
+    padding: 100px 0;
+    background-color: #f1f1f1;
+}
+
+.project-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.project-card {
+    border: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card .card-title {
+    font-weight: 600;
+}
+
+/* Contact Section */
+#contact {
+    padding: 100px 0;
+    background-color: #007bff;
+    color: white;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form .form-control {
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #28a745;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: 600;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+
+
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        font-size: 1.5rem;
+    }
+ 
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .sitem {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sitem div {
+        margin-bottom: 20px;
+        flex: 1 0 100%;
+    }
+
+    .project-card {
+        margin-bottom: 30px;
+    }
+
+    #home img {
+        max-width: 200px;
+    }
+
+    form {
+        width: 90%;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-brand {
+        font-size: 1.7rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    .sitem {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .sitem div {
+        flex: 1 0 45%;
+    }
+
+    #home img {
+        max-width: 220px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .sitem div {
+        flex: 1 0 30%;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #home img {
+        max-width: 250px;
+    }
+}
